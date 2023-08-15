@@ -9,3 +9,4 @@ else:
     print("el precio es valido")
     mensaje = "el precio es valido"
 print(mensaje)
+print("fin de la operacion")
