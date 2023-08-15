@@ -1,3 +1,3 @@
 # pci-ad23
-para los ejercicios de pensamieto computacional 
+para la entrega de tareas y ejercicios de la materiaa de pensamiento computacional 
 este es mi proyecto 
