@@ -1,47 +1,52 @@
-def Dime_tu_peso():
-    peso = float(input("introduce tu peso en KG: "))
-    return peso
+nombre = input("dime tu nombre: ")
+print(f"bienvenid@ {nombre} por favor sigue las instrucciones. ")
+peso = float(input("introduce tu peso:"))
+estatura = float(input("introduce tu estatura en cm: "))
+edad = float(input("introduce tu edad: "))
+Tmb = 65.5
+sexo = float(input("escribe 1 si eres hombre o 2 si eres mujer: "))
 
 
-def Dime_tu_estatura():
-    estatura = float(input("introduce tu estatura en cm: "))
-    return estatura
+def kcalorias_hombre():
+    return Tmb+13.75*peso+5.003*estatura-6.75*edad
 
 
-def calcular_calorias():
-
-    tmb = 65.5
-    edad = int(input("por favor introduce tu edad: "))
-    calorias_diarias = tmb+13.75*Dime_tu_peso()+5.003*Dime_tu_estatura()-6.75*edad
-    return calorias_diarias
+def kcalorias_mujer():
+    return Tmb+9.75*peso+4.003*estatura-4.7*edad
 
 
-def calcular_proteina():
-    proteina_diaria = 1.6*Dime_tu_peso()
-    return proteina_diaria
+def proteina():
+    return 1.6*peso
 
 
-def calcular_grasas():
-    calorias_grasas = calcular_calorias()*0.25
-    req_grasas = calorias_grasas/9
-    return req_grasas
+def carbohidratos():
+    return kcalorias_hombre()/4
 
 
-def calcular_carbohidratos():
-    carbos_diarios = calcular_calorias()/4
-    return carbos_diarios
+def grasas():
+    return (kcalorias_hombre()*0.25)/9
 
 
 def main():
-    nombre = input("Hola cual es tu nombre?: ")
-    print(f"Bienvenido {nombre}!!!")
-    print("Muy bien, comencemos!!!")
-    print(f"tus calorias a consumir son {calcular_calorias()}kcal")
-    print(f"tu requerimiento de proteina diaria es de {calcular_proteina()}g")
-    print(f"tu requerimiento de grasas diaria es de {calcular_grasas()}g")
-    print(
-        f"tu requerimiento de carbohidratos es de {calcular_carbohidratos()}g")
-    print(f"MUCHAS GRACIAS {nombre} nos vemos pronto")
+    while True:
+
+        if sexo == 1:
+            print(f"tus kcal de consumo diario son {kcalorias_hombre()}kcal")
+        elif sexo == 2:
+            print(f"tus kcal de consumo diario son {kcalorias_mujer()}kcal")
+        else:
+            print(
+                "Lo siento los datos que has ingresado no estan dentro de mis parametros.")
+            print("Por favor vuelve a intentarlo. ")
+            exit()
+
+        print(f"tu consumo de proteina diaria es de {proteina()}g")
+        print(f"tu consumo de carbohidratos diarios es de {carbohidratos()}g")
+        print(f"tu consumo de grasas diario es de {grasas()}g")
+        respuesta = input("Quieres salir?: s/n")
+        if respuesta.lower() == 's':
+            print("Muchas gracias por usar mi programa vuelve pronto")
+            break
 
 
 main()
