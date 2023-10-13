@@ -1,19 +1,19 @@
-# Algoritmo FitBodyBuilding (nombre en proceso creativo)
+# Algoritmo de NUTRIBOT
 
 ## Problemática y contexto
 
-Una problemática muy común que ocurre con las personas es que desconocen por completo cuántas calorías deberían consumir diariamente, así como también el poder estructurar esas calorías en una dieta balanceada que contemple todos sus requerimientos diarios de proteína, carbohidratos y grasas, que son principalmente los macronutrientes más importantes para la construcción de músculo.
+El proyecto fue repensado para volverse un asistente virtual para nutriologos ya que finalmente al pensarlo si bien es cierto que es bueno que las personas tengan conceptos basicos sobre nutricion siempre es recomendable que asistan con un profesional en el tema para que su dieta este mas balanceada que solo cumplir con los macronutrientes y kcalorias necesarias consumiendo solo hamburguesas o pizza y es por esa razon que el usuario objetivo del programa cambio para ser usado por profesionales de la nutricion.
 
-Mi proyecto consiste en un programa que sea capaz de calcular las calorías que debería consumir una persona sana de acuerdo a su peso y estatura, así como también la cantidad de los tres macronutrientes necesarios para llevar a cabo este requisito. Además, el programa será adaptable de acuerdo al tiempo de ejercicio que se realiza diariamente. Para esto último, utilizaré los registros de mi smartwatch para tener un cálculo más preciso de cuántas calorías queman 2 horas de ejercicio 5 días a la semana.
+Mi proyecto consiste en un programa que sea capaz de calcular las calorías que debería consumir una persona sana de acuerdo a su peso y estatura, así como también la cantidad de los tres macronutrientes necesarios para llevar a cabo este requisito. Para poder calcular esto se utilizo el metodo de Harris-Benedict que es el metodo universal para calcular las necesidades caloricas de una persona para mantenerse en su peso ideal.
 
 Esto me parece una idea bastante interesante, ya que llevo aproximadamente casi un año contando mis calorías y macronutrientes consumidos, y en algún futuro me gustaría ser fisicoculturista profesional. Tengo conocimientos en este tema y me resultaría interesante diseñar una herramienta que sea útil principalmente para mí en el futuro, y, por supuesto, podría serlo para otras personas.
 
-## Algoritmo FitBodyBuilding (nombre en proceso creativo)
+## Algoritmo NUTRIBOT
 
-### Entradas: datos del usuario (peso, estatura y sexo)
+### Entradas: datos del paciente (peso, estatura y sexo)
 ### Salida: calorías de mantenimiento y requerimientos diarios en macronutrientes para la persona según los datos proporcionados.
 
-1. Por favor, ingresa tu nombre: (nombre)
+1. Por favor, ingresa el nombre del paciente: (nombre)
 2. Si eres un usuario nuevo, te damos la bienvenida a FitBodyBuilding. Por favor ingresa los datos que te solicitaremos a continuación. Si no, te damos la bienvenida de nuevo.
 3. Por favor ingresa tu peso: (peso)
 4. Por favor ingresa tu estatura en cm: (estatura)
