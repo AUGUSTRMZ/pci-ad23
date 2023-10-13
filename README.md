@@ -15,10 +15,10 @@ Esto me parece una idea bastante interesante, ya que llevo aproximadamente casi 
 
 1. Por favor, ingresa el nombre del paciente: (nombre)
 2. Si eres un usuario nuevo, te damos la bienvenida a FitBodyBuilding. Por favor ingresa los datos que te solicitaremos a continuación. Si no, te damos la bienvenida de nuevo.
-3. Por favor ingresa tu peso: (peso)
-4. Por favor ingresa tu estatura en cm: (estatura)
-5. Por favor ingresa tu edad: (edad)
-6. Por favor, ingresa si eres hombre (H) o mujer (M).
+3. Por favor ingresa el peso del paciente: (peso)
+4. Por favor ingresa la estatura en cm del paciente: (estatura)
+5. Por favor ingresa la edad edad del paciente: (edad)
+6. Por favor, ingresa si el paciente es hombre (H) o mujer (M).
 7. AVISO IMPORTANTE: ASEGÚRATE DE QUE LOS DATOS INGRESADOS SON CORRECTOS, YA QUE UN DATO INCORRECTO PUEDE LLEVAR A UNA RECOMENDACIÓN ERRÓNEA Y, POR TANTO, TENER EFECTOS NEGATIVOS EN EL LOGRO DE TUS METAS.
 8. ¿Son estos datos correctos? Peso: {peso} kg, estatura: {estatura} cm, sexo: {sexo seleccionado (H/M)} (Y/N)
 
