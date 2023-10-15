@@ -90,6 +90,7 @@ el consumo diario de proteina del paciente debe ser de {proteina()}g
 el consumo diario de carbohidratos del paciente debe ser de {carbohidratos()}g
 el consumo diario de grasas del paciente debe ser de {grasas()}g
 se recomienda tomar al menos 2 litros de agua al dia """)
+                break
 
 
 # se establece una funcion para guardar los registros del paciente en la lista definida al inicio
